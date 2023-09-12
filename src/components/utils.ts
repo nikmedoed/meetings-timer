@@ -25,17 +25,16 @@ export function textToFileData(fileContent: string): FileData {
     const activity = lines[0].trim();
 
     for (let i = 1; i < lines.length; i++) {
-        const parts = lines[i].split('\t');
-        if (parts.length === 2) {
-            const name = parts[0].trim();
-            const minutes = parseInt(parts[1], 10);
+        let parts = lines[i].trim().split(/\s+/);
+        const minutes = parseInt(parts.pop(), 10);
+        const name = parts.join(' ');
+        if (!isNaN(minutes)) {
             const time = minutes * 60
             previousColor = getNextRandomColor(previousColor);
             const color = `rgb(${previousColor.join(',')})`;
-            if (!isNaN(minutes)) {
-                stages.push({ name, minutes, time, color });
-            }
+            stages.push({ name, minutes, time, color });
         }
+
     }
     const totalTime = stages.reduce((acc, stage) => acc + stage.minutes, 0) * 60
     return { activity, stages, totalTime };
