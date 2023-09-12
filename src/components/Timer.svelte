@@ -15,7 +15,7 @@
 
     let isRunning = false;
     let timer: number | undefined;
-    let timeСounter: number = 90800;
+    let timeСounter: number = 0;
 
     function updateTimer() {
         currentStage = stages[currentStageIndex];
