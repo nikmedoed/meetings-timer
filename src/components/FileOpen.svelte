@@ -11,7 +11,7 @@
     export let nextScreen: () => void;
 
     const dispatch = createEventDispatcher<FileData>();
- 
+
     let fileInput: HTMLInputElement | null;
 
     function textToNext(fileContent: string) {
@@ -58,7 +58,7 @@
                 bind:this={fileInput}
                 on:change={handleFileInputChange}
             />
-            <button class="time-small" on:click={() => fileInput?.click()}
+            <button class="text-normal" on:click={() => fileInput?.click()}
                 >Выбрать файл</button
             >
         </div>

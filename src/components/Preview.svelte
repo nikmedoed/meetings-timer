@@ -18,7 +18,7 @@
                 filedata.totalTime / 3600
             ).toFixed(1)} ч)
         </div>
-        <div class="time-small row">
+        <div class="text-normal row">
             <button class="row button2" on:click={() => nextScreen(-1)}
                 >Сменить</button
             >

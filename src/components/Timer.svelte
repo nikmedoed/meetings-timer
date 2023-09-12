@@ -15,7 +15,7 @@
 
     let isRunning = false;
     let timer: number | undefined;
-    let timeСounter: number = 0;
+    let timeСounter: number = 90800;
 
     function updateTimer() {
         currentStage = stages[currentStageIndex];
@@ -82,13 +82,13 @@
             Этап {currentStageIndex + 1}: {currentStage.name}
         </h1>
         <div class="row">
-            <div class="timer">
+            <div class="timer flex">
                 <div class="time">{formatTime(currentStage.time)}</div>
                 <div class="label">
                     Осталось на этап из {currentStage.minutes} мин
                 </div>
             </div>
-            <div class="timer">
+            <div class="timer flex">
                 <div class="time">{formatTime(plannedTime)}</div>
                 <div class="label">Осталось на этап по плану</div>
             </div>
@@ -107,13 +107,16 @@
             {/each}
             <div
                 class="line"
-                style="width: {(100 * timeСounter) / filedata.totalTime}%;"
+                style="width: {Math.min(
+                    (100 * timeСounter) / filedata.totalTime,
+                    98
+                )}%;"
             />
         </div>
 
         <div class="row">
             <div class="buttons">
-                <button class="close " on:click={wannaClose}>Конец</button>
+                <button class="close" on:click={wannaClose}>X</button>
                 <button on:click={startTimer} hidden={isRunning}>Старт</button>
                 <button on:click={stopTimer} hidden={!isRunning}>Пауза</button>
                 <button
@@ -134,7 +137,7 @@
                 >
             </div>
             <div class="timer">
-                <div class="time-small">
+                <div class="text-normal timer-small">
                     {formatTime(timeСounter)} / {formatTime(filedata.totalTime)}
                 </div>
                 <div class="label-small">Всего</div>

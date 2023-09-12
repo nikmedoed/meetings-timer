@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype-variations')
+}
+
 :root {
   --zone-color: #505050;
   --background-color: #131313;
@@ -6,7 +14,7 @@
   --highlight-secondary: #1082a1;
   --shadow-color: rgba(0, 0, 0, 0.25);
   --back-opacity: rgb(45, 45, 45, 45%);
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 12px;
   color: var(--text-color);
   font-weight: 400;
@@ -35,6 +43,7 @@ body {
   flex-direction: column;
   justify-content: stretch;
   text-align: left;
+  height: 100vh;
 }
 
 input,
@@ -122,12 +131,19 @@ button {
   margin: 3px;
 }
 
+.buttons {
+  flex: 2;
+}
+
 .timer {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.flex {
+  flex-grow: 1;
 }
 
 .label {
@@ -138,16 +154,16 @@ button {
 }
 
 .time {
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
 }
 
-.time-small {
+.text-normal {
   font-size: 15px;
 }
 
-.buttons {
-  flex: 2;
+.timer-small {
+  width: 140px;
 }
 
 
