@@ -26,7 +26,7 @@ stage 3 name	time_in_minutes
 
 ## Develop
 
-1. Configure the environment [Tauri + Svelte + TypeScript](https://tauri.app /)
+1. Configure the environment [Tauri + Svelte + TypeScript](https://tauri.app/)
 2. Install dependencies via `yarn`, `npm` , `pnpm`
 3. Run (`yarn tauri dev`)
 4. Build (`yarn tauri build`)

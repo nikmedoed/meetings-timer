@@ -28,7 +28,8 @@
         "icons/icon128x128.png",
         "icons/icon128x128@2x.png",
         "icons/icon.icns",
-        "icons/icon.ico"
+        "icons/icon.ico",
+        "icons/icon.png"
       ]
     },
     "security": {
@@ -37,6 +38,9 @@
     "macOSPrivateApi": true,
     "windows": [
       {
+        "transparent": true,
+        "x": 0,
+        "y": 0,
         "decorations": false,
         "closable": true,
         "fullscreen": false,
@@ -44,12 +48,9 @@
         "alwaysOnTop": true,
         "minimizable": true,
         "title": "Meetings timer",
-        "transparent": true,
         "fileDropEnabled": true,
         "width": 360,
-        "height": 160,
-        "x": 0,
-        "y": 0
+        "height": 160
       }
     ]
   }
