@@ -37,7 +37,7 @@ stage 3 name	time_in_minutes
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
 
 ## ToDo
-- [ ] Fix fonts on MacOs
+- [x] Fix fonts & layout on MacOs
 - [ ] Make it movable across the screen
 	- [ ] Alignment at the edges of the screen
 - [ ] Automating builds via github actions

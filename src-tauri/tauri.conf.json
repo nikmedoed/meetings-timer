@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "meetings-timer",
+    "productName": "Meetings Timer",
     "version": "1.0.0"
   },
   "tauri": {
@@ -34,6 +34,7 @@
     "security": {
       "csp": null
     },
+    "macOSPrivateApi": true,
     "windows": [
       {
         "decorations": false,
