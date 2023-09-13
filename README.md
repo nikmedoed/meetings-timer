@@ -1,7 +1,7 @@
 # Meetings Timer
 Helps to plan and track every stage of your activity
 
-![](https://i.imgur.com/0NzAwgK.gif)
+![](https://github.com/nikmedoed/gifs-share/blob/main/timer.gif)
 
 This solution allows you to follow the event plan non-linearly.
 You can go ahead or be late, the app will help you control the time difference. Switch in stages, as required by the process.
