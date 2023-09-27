@@ -45,3 +45,5 @@ stage 3 name	time_in_minutes
 - [ ] Localization i18
 - [ ] Fullscreen mode
 - [ ] Scaling
+
+[![Инструкция](https://img.youtube.com/vi/QMqqukRwSs4/0.jpg)](https://youtu.be/QMqqukRwSs4)
